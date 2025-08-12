@@ -14,7 +14,7 @@ const Login = ({ onSubmit, onSwitchMode }) => {
   const [rememberMe, setRememberMe] = useState(false)
 
   const navigate = useNavigate()
-  const url = 'https://task-manager-qvi8.onrender.com/'
+  const url = 'https://task-manager-qvi8.onrender.com'
 
   useEffect(() => {
     const token = localStorage.getItem('tokem')
