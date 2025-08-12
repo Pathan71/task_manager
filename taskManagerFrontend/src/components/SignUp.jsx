@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { User, Mail, Lock } from 'lucide-react'
 import axios from 'axios'
 
-const API_URL = "http://localhost:4000"
+const API_URL = "https://task-manager-qvi8.onrender.com"
 const INITIAL_FORM = { name: '', email: '', password: '' }
 
 const SignUp = ({ onSwitchMode }) => {
