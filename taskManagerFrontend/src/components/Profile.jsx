@@ -4,7 +4,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
-const API_URL = 'https://task-manager-qvi8.onrender.com'
+const API_URL = 'http://localhost:4000'
 
 const Profile = ({ setCurrentUser, onLogout }) => {
 
