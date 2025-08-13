@@ -19,9 +19,9 @@ const Layout = ({ onLogout, user }) => {
       const token = localStorage.getItem('token')
       if (!token) throw new Error('No auth token found')
 
-     const { data } = await axios.get("https://task-manager-qvi8.onrender.com/api/tasks/tk", {
-    headers: { Authorization: `Bearer ${token}` }
-})
+      const { data } = await axios.get("http://localhost:4000/api/tasks/tk", {
+        headers: { Authorization: `Bearer ${token}` }
+      })
       const arr = Array.isArray(data) ? data :
         Array.isArray(data?.tasks) ? data.tasks :
           Array.isArray(data?.data) ? data.data : []
