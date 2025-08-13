@@ -1,7 +1,7 @@
 import { AlignLeft, Calendar, CheckCircle, Flag, PlusCircle, Save, X } from 'lucide-react'
 import React, { useCallback, useEffect, useState } from 'react'
 
-const API_BASE = 'https://task-manager-qvi8.onrender.com/api/tasks'
+const API_BASE = 'http://localhost:4000/api/tasks'
 
 const TaskModal = ({ isOpen, onClose, taskToEdit, onSave, onLogout }) => {
 
