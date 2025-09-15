@@ -4,7 +4,7 @@ import { format, isToday } from 'date-fns'
 import axios from 'axios'
 import TaskModal from './TaskModal'
 
-const API_BASE = 'http://localhost:4000/api/tasks'
+const API_BASE = 'https://task-manager-qvi8.onrender.com/api/tasks'
 
 const TaskItem = ({ task, onRefresh, onLogout, showCompeleteCheckbox = true }) => {
 
