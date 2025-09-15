@@ -5,6 +5,8 @@ import { Outlet } from 'react-router-dom'
 import axios from 'axios'
 import { Circle, Clock, TrendingUp, Zap } from 'lucide-react'
 
+const url = 'https://task-manager-qvi8.onrender.com'
+
 const Layout = ({ onLogout, user }) => {
 
   const [tasks, setTasks] = useState([])
@@ -19,7 +21,7 @@ const Layout = ({ onLogout, user }) => {
       const token = localStorage.getItem('token')
       if (!token) throw new Error('No auth token found')
 
-      const { data } = await axios.get("http://localhost:4000/api/tasks/tk", {
+      const { data } = await axios.get(`${url}/api/tasks/tk`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       const arr = Array.isArray(data) ? data :
